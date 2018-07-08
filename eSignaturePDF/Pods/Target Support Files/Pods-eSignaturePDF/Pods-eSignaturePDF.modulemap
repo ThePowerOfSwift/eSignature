@@ -1,0 +1,6 @@
+framework module Pods_eSignaturePDF {
+  umbrella header "Pods-eSignaturePDF-umbrella.h"
+
+  export *
+  module * { export * }
+}
