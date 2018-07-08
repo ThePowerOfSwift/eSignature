@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15152EF2A5B96104D45663472CE27434 /* EPExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE35B385C6DDEB8251D3AA7B895A7C5 /* EPExtensions.swift */; };
+		205641ECB07E1C3011D67471041AFF14 /* EPSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C936E3072DE69C449B85C793F8A615FD /* EPSignatureViewController.xib */; };
+		51597DD0C472FE2D4217C2167948AC98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5A90A6FF42D26BE500EE4C1DD74FF443 /* EPSignature-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15163FC6EAD8DB6E4ECF7F4D05D77C7D /* EPSignature-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FFD81806E82E0F239041F8BD7A11D2E /* Pods-eSignaturePDF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A12E52BBA60036C3481CBD2CC1D3AA /* Pods-eSignaturePDF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD181E43627D5D00CF73A151804DDA7E /* EPSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E206965BFF55A869132BE43C872B79 /* EPSignatureViewController.swift */; };
+		B0242434CE715B92729BE6CFA879EA98 /* EPSignature-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3401F5487BF7590A64C5EBC1602AB472 /* EPSignature-dummy.m */; };
+		B792FA3D261FB817E67322E089DB4521 /* EPSignatureViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = C936E3072DE69C449B85C793F8A615FD /* EPSignatureViewController.xib */; };
+		E19FC288B4AE553FE6CAE9EE302F338D /* EPSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9A5F8174C63691D724B4A27B65925 /* EPSignatureView.swift */; };
+		ED7BEA1F2B66584C6DE745DC354A2B4D /* Pods-eSignaturePDF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3566F8A339352C108514FEDADE6E624 /* Pods-eSignaturePDF-dummy.m */; };
+		F28E069769A08F694A5C737B0A186F42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C55A6F98F2DEDACDA7687763C53DBEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19D6D9705482D1B9CB1C3F1D8CC28599;
+			remoteInfo = EPSignature;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15163FC6EAD8DB6E4ECF7F4D05D77C7D /* EPSignature-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EPSignature-umbrella.h"; sourceTree = "<group>"; };
+		1DE35B385C6DDEB8251D3AA7B895A7C5 /* EPExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EPExtensions.swift; path = Pod/Classes/EPExtensions.swift; sourceTree = "<group>"; };
+		1FABB5CE20557D8A70A9CB9A4988C5F5 /* EPSignature.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EPSignature.xcconfig; sourceTree = "<group>"; };
+		2912F875E506BF2E6CCAAC0FA09438B7 /* Pods-eSignaturePDF-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-eSignaturePDF-resources.sh"; sourceTree = "<group>"; };
+		2EEF73787881F4209B003198CE0306DA /* EPSignature-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EPSignature-prefix.pch"; sourceTree = "<group>"; };
+		3401F5487BF7590A64C5EBC1602AB472 /* EPSignature-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EPSignature-dummy.m"; sourceTree = "<group>"; };
+		366D895D4BDB5F2055326A8E52742D7C /* EPSignature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EPSignature.framework; path = EPSignature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46912246F396C34B25B1339E80EB2D03 /* Pods-eSignaturePDF-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-eSignaturePDF-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6338854FE7A4A28667F45C1D56C36F46 /* Pods-eSignaturePDF-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-eSignaturePDF-frameworks.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67A12E52BBA60036C3481CBD2CC1D3AA /* Pods-eSignaturePDF-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-eSignaturePDF-umbrella.h"; sourceTree = "<group>"; };
+		6B6DA2BE693C74AD3BFBFEFC12447901 /* Pods-eSignaturePDF-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-eSignaturePDF-acknowledgements.plist"; sourceTree = "<group>"; };
+		751B1F54E1E199AC9DAF587439C4B215 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76939011B931EF7DBAA3380C3BEC5FA7 /* Pods-eSignaturePDF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-eSignaturePDF.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99CCCD6E76A1354DB7C1B0F61CD4B31E /* Pods-eSignaturePDF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-eSignaturePDF.debug.xcconfig"; sourceTree = "<group>"; };
+		9C08EFE8F7E806CC2D8CB08C6F430114 /* Pods_eSignaturePDF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_eSignaturePDF.framework; path = "Pods-eSignaturePDF.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C936E3072DE69C449B85C793F8A615FD /* EPSignatureViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = EPSignatureViewController.xib; path = Pod/Classes/EPSignatureViewController.xib; sourceTree = "<group>"; };
+		D2E206965BFF55A869132BE43C872B79 /* EPSignatureViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EPSignatureViewController.swift; path = Pod/Classes/EPSignatureViewController.swift; sourceTree = "<group>"; };
+		D3AB54091232754033CD3ABE632404D9 /* EPSignature.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EPSignature.modulemap; sourceTree = "<group>"; };
+		D6B725118801361E61DD40BBF38A970F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E9A5F8174C63691D724B4A27B65925 /* EPSignatureView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EPSignatureView.swift; path = Pod/Classes/EPSignatureView.swift; sourceTree = "<group>"; };
+		E3566F8A339352C108514FEDADE6E624 /* Pods-eSignaturePDF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-eSignaturePDF-dummy.m"; sourceTree = "<group>"; };
+		F70A115037F13C5FC4BFED94D8BBBD09 /* Pods-eSignaturePDF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-eSignaturePDF.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81BD7B8934474A6372165FC7841C5605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28E069769A08F694A5C737B0A186F42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B82E6F06CE26DF32FF73A1302D75E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51597DD0C472FE2D4217C2167948AC98 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53246ABCC8C801DEBE0E2050BA110978 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				366D895D4BDB5F2055326A8E52742D7C /* EPSignature.framework */,
+				9C08EFE8F7E806CC2D8CB08C6F430114 /* Pods_eSignaturePDF.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AEF956627B5804B0C7AE3E573099CDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84035DDF1F8C6B23F18244B36E6B226F /* EPSignature */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5ED26C6A0E8AAFE362E659D77CC9BE54 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9490836E8476377B1B5737914E4FAF85 /* Pods-eSignaturePDF */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				5AEF956627B5804B0C7AE3E573099CDA /* Pods */,
+				53246ABCC8C801DEBE0E2050BA110978 /* Products */,
+				5ED26C6A0E8AAFE362E659D77CC9BE54 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84035DDF1F8C6B23F18244B36E6B226F /* EPSignature */ = {
+			isa = PBXGroup;
+			children = (
+				1DE35B385C6DDEB8251D3AA7B895A7C5 /* EPExtensions.swift */,
+				E1E9A5F8174C63691D724B4A27B65925 /* EPSignatureView.swift */,
+				D2E206965BFF55A869132BE43C872B79 /* EPSignatureViewController.swift */,
+				C936E3072DE69C449B85C793F8A615FD /* EPSignatureViewController.xib */,
+				D8645D4CAFAB485EFAFCBF218C8C37ED /* Resources */,
+				D2611AC0F86874117E694DD91046E9DF /* Support Files */,
+			);
+			name = EPSignature;
+			path = EPSignature;
+			sourceTree = "<group>";
+		};
+		9490836E8476377B1B5737914E4FAF85 /* Pods-eSignaturePDF */ = {
+			isa = PBXGroup;
+			children = (
+				751B1F54E1E199AC9DAF587439C4B215 /* Info.plist */,
+				76939011B931EF7DBAA3380C3BEC5FA7 /* Pods-eSignaturePDF.modulemap */,
+				46912246F396C34B25B1339E80EB2D03 /* Pods-eSignaturePDF-acknowledgements.markdown */,
+				6B6DA2BE693C74AD3BFBFEFC12447901 /* Pods-eSignaturePDF-acknowledgements.plist */,
+				E3566F8A339352C108514FEDADE6E624 /* Pods-eSignaturePDF-dummy.m */,
+				6338854FE7A4A28667F45C1D56C36F46 /* Pods-eSignaturePDF-frameworks.sh */,
+				2912F875E506BF2E6CCAAC0FA09438B7 /* Pods-eSignaturePDF-resources.sh */,
+				67A12E52BBA60036C3481CBD2CC1D3AA /* Pods-eSignaturePDF-umbrella.h */,
+				99CCCD6E76A1354DB7C1B0F61CD4B31E /* Pods-eSignaturePDF.debug.xcconfig */,
+				F70A115037F13C5FC4BFED94D8BBBD09 /* Pods-eSignaturePDF.release.xcconfig */,
+			);
+			name = "Pods-eSignaturePDF";
+			path = "Target Support Files/Pods-eSignaturePDF";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2611AC0F86874117E694DD91046E9DF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3AB54091232754033CD3ABE632404D9 /* EPSignature.modulemap */,
+				1FABB5CE20557D8A70A9CB9A4988C5F5 /* EPSignature.xcconfig */,
+				3401F5487BF7590A64C5EBC1602AB472 /* EPSignature-dummy.m */,
+				2EEF73787881F4209B003198CE0306DA /* EPSignature-prefix.pch */,
+				15163FC6EAD8DB6E4ECF7F4D05D77C7D /* EPSignature-umbrella.h */,
+				D6B725118801361E61DD40BBF38A970F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EPSignature";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D8645D4CAFAB485EFAFCBF218C8C37ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2F68AC8324024BD87810C1B4CEEE5FB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A90A6FF42D26BE500EE4C1DD74FF443 /* EPSignature-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E704968BAEAF590F8B0D10F4CDA045BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFD81806E82E0F239041F8BD7A11D2E /* Pods-eSignaturePDF-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19D6D9705482D1B9CB1C3F1D8CC28599 /* EPSignature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86A0C7D04725A1BF12D22F971E9C366A /* Build configuration list for PBXNativeTarget "EPSignature" */;
+			buildPhases = (
+				A577DD2B4F87F8CC1640FE72EF31A653 /* Sources */,
+				81BD7B8934474A6372165FC7841C5605 /* Frameworks */,
+				C8C3DF8A382A6A9A02C16F329EE0061D /* Resources */,
+				2F68AC8324024BD87810C1B4CEEE5FB0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EPSignature;
+			productName = EPSignature;
+			productReference = 366D895D4BDB5F2055326A8E52742D7C /* EPSignature.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E15CB4F47085B7A14A3A2C32ED54B09A /* Pods-eSignaturePDF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB8305B03FC2C306200A6CB53E4B1A2 /* Build configuration list for PBXNativeTarget "Pods-eSignaturePDF" */;
+			buildPhases = (
+				3C380288D394233D9D523B4955EF141C /* Sources */,
+				9B82E6F06CE26DF32FF73A1302D75E68 /* Frameworks */,
+				E704968BAEAF590F8B0D10F4CDA045BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA910EDE6F4FEB018811BA5287D9758C /* PBXTargetDependency */,
+			);
+			name = "Pods-eSignaturePDF";
+			productName = "Pods-eSignaturePDF";
+			productReference = 9C08EFE8F7E806CC2D8CB08C6F430114 /* Pods_eSignaturePDF.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 53246ABCC8C801DEBE0E2050BA110978 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19D6D9705482D1B9CB1C3F1D8CC28599 /* EPSignature */,
+				E15CB4F47085B7A14A3A2C32ED54B09A /* Pods-eSignaturePDF */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8C3DF8A382A6A9A02C16F329EE0061D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205641ECB07E1C3011D67471041AFF14 /* EPSignatureViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C380288D394233D9D523B4955EF141C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7BEA1F2B66584C6DE745DC354A2B4D /* Pods-eSignaturePDF-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A577DD2B4F87F8CC1640FE72EF31A653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15152EF2A5B96104D45663472CE27434 /* EPExtensions.swift in Sources */,
+				B0242434CE715B92729BE6CFA879EA98 /* EPSignature-dummy.m in Sources */,
+				E19FC288B4AE553FE6CAE9EE302F338D /* EPSignatureView.swift in Sources */,
+				AD181E43627D5D00CF73A151804DDA7E /* EPSignatureViewController.swift in Sources */,
+				B792FA3D261FB817E67322E089DB4521 /* EPSignatureViewController.xib in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA910EDE6F4FEB018811BA5287D9758C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EPSignature;
+			target = 19D6D9705482D1B9CB1C3F1D8CC28599 /* EPSignature */;
+			targetProxy = 3C55A6F98F2DEDACDA7687763C53DBEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		621AB785940626574F07364CB14760E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		69E2B363D698993D5F4EED102E90C388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99CCCD6E76A1354DB7C1B0F61CD4B31E /* Pods-eSignaturePDF.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-eSignaturePDF/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-eSignaturePDF/Pods-eSignaturePDF.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_eSignaturePDF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7744F565F976613DBAE3F9D1F44139AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70A115037F13C5FC4BFED94D8BBBD09 /* Pods-eSignaturePDF.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-eSignaturePDF/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-eSignaturePDF/Pods-eSignaturePDF.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_eSignaturePDF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		994419E928E0239CA61597C09105E1EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FABB5CE20557D8A70A9CB9A4988C5F5 /* EPSignature.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EPSignature/EPSignature-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EPSignature/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EPSignature/EPSignature.modulemap";
+				PRODUCT_NAME = EPSignature;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B57C09D404C607DDE283C5C44183B2A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E71E1F5F372DA737D2240278120A3E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FABB5CE20557D8A70A9CB9A4988C5F5 /* EPSignature.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EPSignature/EPSignature-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EPSignature/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EPSignature/EPSignature.modulemap";
+				PRODUCT_NAME = EPSignature;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BB8305B03FC2C306200A6CB53E4B1A2 /* Build configuration list for PBXNativeTarget "Pods-eSignaturePDF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E2B363D698993D5F4EED102E90C388 /* Debug */,
+				7744F565F976613DBAE3F9D1F44139AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57C09D404C607DDE283C5C44183B2A1 /* Debug */,
+				621AB785940626574F07364CB14760E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86A0C7D04725A1BF12D22F971E9C366A /* Build configuration list for PBXNativeTarget "EPSignature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994419E928E0239CA61597C09105E1EA /* Debug */,
+				E71E1F5F372DA737D2240278120A3E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
